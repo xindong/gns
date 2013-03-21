@@ -2,4 +2,12 @@
 
 cd `dirname $0`
 
-echo conf/gns.*.conf > build/dnsmasq.gns.conf
+build="build/dnsmasq.conf"
+
+echo > $build
+
+echo "resolv-file=/etc/dnsmasq.resolv" >> $build
+echo "addn-hosts=/etc/dnsmasq.hosts" >> $build
+
+cat conf/gns.*.conf >> $build
+
