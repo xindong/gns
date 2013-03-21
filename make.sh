@@ -2,4 +2,4 @@
 
 cd `dirname $0`
 
-echo gns.*.conf > build/dnsmasq.gns.conf
+echo conf/gns.*.conf > build/dnsmasq.gns.conf
