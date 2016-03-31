@@ -6,7 +6,7 @@ build="build/dnsmasq.conf"
 
 echo -n > $build
 
-#echo "min-cache-ttl=600" >> $build
+echo "min-cache-ttl=600" >> $build
 echo "resolv-file=/etc/dnsmasq.resolv" >> $build
 echo "addn-hosts=/etc/dnsmasq.hosts" >> $build
 echo "conf-dir=/etc/dnsmasq.d" >> $build
