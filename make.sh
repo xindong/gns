@@ -12,6 +12,7 @@ echo "addn-hosts=/etc/dnsmasq.hosts" >> $build
 echo "conf-dir=/etc/dnsmasq.d" >> $build
 echo "log-queries" >> $build
 echo "log-facility=local1" >> $build
+echo "port=5353" >> $build
 echo "cache-size=2000000" >> $build
 
 echo >> $build
