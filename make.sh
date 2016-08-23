@@ -15,6 +15,7 @@ echo "log-queries" >> $build
 echo "log-facility=local1" >> $build
 echo "port=5353" >> $build
 echo "cache-size=2000000" >> $build
+echo "dns-forward-max=15000" >> $build
 
 echo >> $build
 
